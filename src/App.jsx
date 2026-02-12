@@ -1,7 +1,6 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import ProductViewer from "./components/ProductViewer";
-import StudioLights from "./three/StudioLights";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import ModelSwitcher from "./three/ModelSwitcher";
