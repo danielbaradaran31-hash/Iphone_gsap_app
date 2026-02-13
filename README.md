@@ -1,16 +1,55 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"> <img src="https://raw.githubusercontent.com/USERNAME/REPO/main/assets/Appel.png" alt="MacBook 3D Showcase Banner" width="900"> </p>
+🚀 MacBook 3D Interactive Showcase
+An immersive 3D product experience built with React, Three.js, React Three Fiber, and GSAP.
+This project brings a MacBook Pro to life with smooth animations, dynamic materials, and full user interaction — all rendered directly in the browser.
 
-Currently, two official plugins are available:
+✨ Features
+🎨 Dynamic Color Customization
+Users can switch between different MacBook body colors. Materials update in real time using Three.js and Zustand.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+💻 Model Size Switching (14" / 16")
+Two high‑detail 3D models with seamless transitions powered by GSAP (fade, slide, and opacity animations).
 
-## React Compiler
+🌀 Full 3D Interaction
+Rotate and explore the model using PresentationControls from Drei.
+Smooth, intuitive, and mobile‑friendly.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+⚡ GSAP‑Powered Animations
+All transitions — model switching, fading, movement — are animated with GSAP for a premium, Apple‑like feel.
 
-## Expanding the ESLint configuration
+📱 Fully Responsive
+Optimized scaling and interaction for mobile, tablet, and desktop.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+Technology	Purpose
+React	UI framework
+Three.js	3D rendering engine
+React Three Fiber	React renderer for Three.js
+Drei	Useful helpers for R3F
+GSAP	High‑performance animations
+Zustand	Lightweight state management
+Vite	Fast development environment
+
+❤️ About This Project
+This project is a hands‑on exploration of:
+
+Real‑time 3D rendering in the browser
+
+Advanced GSAP animation workflows
+
+State management with Zustand
+
+glTF model optimization and rendering
+
+Building interactive product experiences
+
+If you want, I can also create:
+
+A short project description for your GitHub profile
+
+A tagline
+
+A GIF preview section
+
+A badges section (React, Three.js, GSAP, Vite, etc.)
