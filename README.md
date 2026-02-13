@@ -1,6 +1,5 @@
 
-<p align="center"> <img src="PATH_TO_YOUR_IMAGE" alt="MacBook 3D Showcase Banner" width="900"> </p>
-
+<p align="center"> <img src="https://raw.githubusercontent.com/USERNAME/REPO/main/assets/Appel.png" alt="MacBook 3D Showcase Banner" width="900"> </p>
 🚀 MacBook 3D Interactive Showcase
 An immersive 3D product experience built with React, Three.js, React Three Fiber, and GSAP.
 This project brings a MacBook Pro to life with smooth animations, dynamic materials, and full user interaction — all rendered directly in the browser.
