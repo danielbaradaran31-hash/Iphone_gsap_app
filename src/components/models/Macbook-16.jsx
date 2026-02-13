@@ -1,19 +1,19 @@
-import React, { useEffect } from 'react';
-import { useGLTF, useTexture } from '@react-three/drei'
-import useMacbookStore from '../components/store';
-import { noChangeParts } from '../constants/index.js';
+import React, {useEffect} from 'react';
 import { Color, SRGBColorSpace } from 'three';
+import useMacbookStore from '../../store';
+import { useGLTF, useTexture } from '@react-three/drei'
+import { noChangeParts } from '../../constants/index.js';
 
-
-export  default function MacbookModel14(props) {
-  const { color } = useMacbookStore();
-  const { nodes, materials, scene } = useGLTF('/models/macbook-14-transformed.glb');
+export default function MacbookModel16(props) {
+   const { color } = useMacbookStore();
+  const { nodes, materials, scene } = useGLTF('/models/macbook-16-transformed.glb')
 
   const texture = useTexture('/screen.png');
     texture.colorSpace = SRGBColorSpace;
     texture.needsUpdate = true;
 
 
+ 
   useEffect(() => {
     scene.traverse((child) => {
       if(child.isMesh) {
@@ -21,8 +21,8 @@ export  default function MacbookModel14(props) {
         child.material.color = new Color(color);
        }
       }
-    })
-  }, [color, scene])
+    });
+  }, [color,scene])
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Object_10.geometry} material={materials.PaletteMaterial001} rotation={[Math.PI / 2, 0, 0]} />
@@ -45,10 +45,9 @@ export  default function MacbookModel14(props) {
       <mesh geometry={nodes.Object_123.geometry} material={materials.sfCQkHOWyrsLmor} rotation={[Math.PI / 2, 0, 0]} >
         <meshStandardMaterial map={texture} />
       </mesh>
-      
       <mesh geometry={nodes.Object_127.geometry} material={materials.ZCDwChwkbBfITSW} rotation={[Math.PI / 2, 0, 0]} />
     </group>
   )
 }
 
-useGLTF.preload('/models/macbook-14-transformed.glb')
+useGLTF.preload('/models/macbook-16-transformed.glb')
