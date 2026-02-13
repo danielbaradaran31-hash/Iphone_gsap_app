@@ -3,7 +3,7 @@ import { useRef } from "react"
 import gsap from "gsap";
 import MacbookModel16 from "../models/Macbook-16.jsx";
 import MacbookModel14 from "../models/Macbook-14.jsx";
-
+import { useGSAP } from "@gsap/react";
 const ANIMATION_DURATION = 1;
 const OFFSET_DISTANCE = 5;
 
@@ -22,14 +22,17 @@ const fadeMeshes = (group, opacity) => {
 const moveGroup = (group, x) => {
     if(!group) return;
 
-    gsap.to(group.positon, { x, duration: ANIMATION_DURATION})
+    gsap.to(group.position, { x, duration: ANIMATION_DURATION})
 }
 
 const ModelSwitcher = ({scale, isMobile}) => {
+    const SCALE_LARGE_DESKTOP = 0.08;
+    const SCALE_LARGE_MOBILE = 0.05;
+    
     const smallMacbookRef = useRef();
     const largeMacbookRef = useRef();
 
-    const showLargeMacbook = scale === 0.08 || scale === 0.05;
+    const showLargeMacbook = scale === SCALE_LARGE_DESKTOP || scale === SCALE_LARGE_MOBILE;
 
     useGSAP(() => {
         if(showLargeMacbook) {
@@ -59,8 +62,7 @@ const ModelSwitcher = ({scale, isMobile}) => {
     <>
     <PresentationControls {...controlsConfig}>
         <group ref={largeMacbookRef}>
-            <MacbookModel16 scale={isMobile ? 0.05 : 0.08} />
-            
+            <MacbookModel16 scale={isMobile ? 0.05 : 0.08} />  
         </group>
     </PresentationControls>
 
